@@ -102,3 +102,17 @@ These screenshots illustrate the difference between network-level capture
 - Deeper packet analysis using PCAP files
 - Comparison with non-proxied traffic captures
 - Detection techniques from a defensive perspective
+
+---
+
+## Final Cleanup
+
+After completing the lab, all MITM-related configurations were reverted:
+
+- Proxy settings were disabled on the Windows client
+- The mitmproxy root CA certificate was removed from the trusted certificate store
+- mitmproxy was stopped on the Kali system
+- No persistent MITM configuration remained active
+
+This ensures that the lab environment was returned to a secure default state.
+
